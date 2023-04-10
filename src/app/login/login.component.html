@@ -1,0 +1,15 @@
+<!-- <p>login works!</p> -->
+
+<div class="wrapper fadeInDown">
+    <div class="alert alert-warning" *ngIf="invalidLogin">{{errorMessage}}</div>
+    <div class="alert alert-success" *ngIf="loginSuccess">{{successMessage}}</div>
+
+    <h3>Login</h3>
+
+    <form>
+        <input type="text" id="username" class="fadeIn second"  name="username" placeholder="username">
+        <input type="password" id="password" class="fadeIn third" name="password" placeholder="password">
+        <input type="submit" (click)=handleLogin() class="fadeIn fourth" value="Log In">
+    </form>
+
+</div>
